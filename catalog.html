@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Седона</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/Style.css">
+    <header>
+        <nav>
+         <ul>
+           <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
+           <li><a href="blank.html">ФОТО И ВИДЕО</a></li>
+         </ul>
+           <img src="img/logo.svg" alt="#">
+          <ul>
+           <li><a href="blank.html">КАРТА ШТАТА</a></li>
+           <li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <section>
+            <img src="img/bc1.jpg" alt="">
+            <ul>
+                
+                    <h4>ИНФРАСТРУКТУРА:</h4>
+                <li>
+                    <input type="checkbox" name="pool" id="filter-pool" checked>
+                    <label for="filter-pool">Бассейн</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="parking" id="filter-parking" unchecked>
+                    <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="wifi" id="filter-wifi" unchecked>
+                    <label for="filter-wifi">Wi-Fi</label>
+                </li>
+                
+            </ul>
+            <ul>
+                <h4>Тип жилья:</h4>
+                <li>
+                    <input type="checkbox" name="hotel" id="filter-hotel" checked> 
+                    <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="moter" id="filter-motel" checked> 
+                    <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Apartments" id="filter-apartments" checked>
+                    <label for="filter-apartments">Аппартаменты</label>
+                </li>
+            </ul>
+
+            <div class="price">
+                <p class="price__title"></p>
+                <div class="price-range">
+                    <div class="price-range__min">От <span class="price-range__min-number">0</span></div>
+                    <span class="price-range__split"></span>
+                    <div class="price-range__max">До <span class="price-range__max-number">3000</span></div>
+                </div>
+                <input type="range" id="cowbell" name="cowbell" min="0" max="3000" value="2700" step="500">
+                <button type="button" name="price-range__show">Показать</button>
+            </div>
+            <!-- Вроде по программе курса работаем без классов, пока что. Пускай будет -->
+        </section>
+
+        <section>
+            <div>
+                
+                <div>   
+                    <p>Найдено: <span>3</span></p>
+                </div>
+                <div>
+                    <p>Сортировка</p>
+                    <ul>
+                        <li><button type="button">По цене</button></li>
+                        <li><button type="button">По типу</button></li>
+                        <li><button type="button">По рейтингу</button></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div>
+                <ul>
+                    <li>
+                        <img src="img/Shape.png" alt="#">
+                    </li>
+                    <li>
+                        <img src="img/Shape1.png" alt="#">
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <img src="#" alt="#">
+
+            </div>
+
+            <ul class="catalog-list">
+                <li class="catalog-list__product">
+                    <div class="product__img">
+                        <img src="img/product.jpg" alt="#">
+                    </div>
+                    <div class="product__descr"></div>
+                        <div class="product__title">
+                            <h3>Amara Resort & Spa</h3>
+                        </div>
+                     <div class="product__price">
+                            <p class="product__price__name">Гостиница</p>
+                            <p>От 4000р</p>
+                     </div>
+                     <div class="product__buttons">
+                            <button class="btn__about">Подробнее</button>
+                            <button class="btn__booked">Забронировать</button>
+                     </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="product__rating">
+                <li><img src="img/Star.png" alt=""></li>
+                <li><img src="img/Star.png" alt=""></li>
+                <li><img src="img/Star.png" alt=""></li>
+                <li><img src="img/Star.png" alt=""></li>
+            </ul>
+
+            <p class="product__rating__quan">Рейтинг: <span>8,5</span></p>
+
+            <ul class="catalog-list">
+                <li class="catalog-list__product">
+                    <div class="product__img">
+                        <img src="img/product1.jpg" alt="#">
+                    </div>
+                    <div class="product__descr"></div>
+                        <div class="product__title">
+                            <h3>Desert Quail Inn</h3>
+                        </div>
+                     <div class="product__price">
+                            <p class="product__price__name">Мотель</p>
+                            <p>От 3000р</p>
+                     </div>
+                     <div class="product__buttons">
+                            <button class="btn__about">Подробнее</button>
+                            <button class="btn__booked">Забронировать</button>
+                     </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="product__rating">
+                <li><img src="img/Star.png" alt=""></li>
+                <li><img src="img/Star.png" alt=""></li>
+                <li><img src="img/Star.png" alt=""></li>
+            </ul>
+
+            <p class="product__rating__quan">Рейтинг: <span>8,9</span></p>
+
+            <ul class="catalog-list">
+                <li class="catalog-list__product">
+                    <div class="product__img">
+                        <img src="img/product2.jpg" alt="#">
+                    </div>
+                    <div class="product__descr"></div>
+                        <div class="product__title">
+                            <h3>Villas at Poco Diablo</h3>
+                        </div>
+                     <div class="product__price">
+                            <p class="product__price__name">Апартаменты</p>
+                            <p>От 2000р</p>
+                     </div>
+                     <div class="product__buttons">
+                            <button class="btn__about">Подробнее</button>
+                            <button class="btn__booked">Забронировать</button>
+                     </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="product__rating">
+                <li><img src="img/Star.png" alt=""></li>
+                <li><img src="img/Star.png" alt=""></li>
+            </ul>
+
+            <p class="product__rating__quan">Рейтинг: <span>9,2</span></p>
+            
+        </section>
+
+        
+    </main>
+    
+</body>
+</html>
