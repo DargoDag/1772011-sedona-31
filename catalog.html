@@ -1,180 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Седона</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-         <ul>
-           <li><a href="blank.html">Информация</a></li>
-           <li><a href="blank.html">Фото и видео</a></li>
-           <li><a href="blank.html">Карта штата</a></li>
-           <li><a href="catalog.html">Гостиницы</a></li>
-          </ul>
-          <a href="index.html">
-            <img src="https://via.placeholder.com/138x70" alt="#">
-          </a>
-        </nav>
-      </header>
+      <nav>
+        <ul>
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/138x70" alt="#" />
+        </a>
+      </nav>
+    </header>
     <main>
-        <section>
-            <img src="https://via.placeholder.com/1200x217" alt="">
-            <ul>
-                
-                    <h4>Инфраструктура:</h4>
-                <li>
-                    <input type="checkbox" name="pool" id="filter-pool" checked>
-                    <label for="filter-pool">Бассейн</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="parking" id="filter-parking" unchecked>
-                    <label for="filter-parking">Парковка</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="wifi" id="filter-wifi" unchecked>
-                    <label for="filter-wifi">Wi-Fi</label>
-                </li>
-                
-            </ul>
-            <ul>
-                <h4>Тип жилья:</h4>
-                <li>
-                    <input type="checkbox" name="hotel" id="filter-hotel" checked> 
-                    <label for="filter-hotel">Гостиница</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="moter" id="filter-motel" checked> 
-                    <label for="filter-motel">Мотель</label>
-                </li>
-                <li>
-                    <input type="checkbox" name="Apartments" id="filter-apartments" checked>
-                    <label for="filter-apartments">Аппартаменты</label>
-                </li>
-            </ul>
-            <div class="price">
-                <p class="price__title"></p>
-                <div class="price-range">
-                    <div class="price-range__min">От <span class="price-range__min-number">0</span></div>
-                    <span class="price-range__split"></span>
-                    <div class="price-range__max">До <span class="price-range__max-number">3000</span></div>
+      <section>
+        <img src="https://via.placeholder.com/1200x217" alt="" />
+
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+
+          <input type="checkbox" name="pool" id="filter-pool" checked />
+          <label for="filter-pool">Бассейн</label>
+
+          <input type="checkbox" name="parking" id="filter-parking" />
+          <label for="filter-parking">Парковка</label>
+
+          <input type="checkbox" name="wifi" id="filter-wifi" />
+          <label for="filter-wifi">Wi-Fi</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <input type="checkbox" name="hotel" id="filter-hotel" checked />
+          <label for="filter-hotel">Гостиница</label>
+          <input type="checkbox" name="moter" id="filter-motel" checked />
+          <label for="filter-motel">Мотель</label>
+          <input
+            type="checkbox"
+            name="apartments"
+            id="filter-apartments"
+            checked
+          />
+          <label for="filter-apartments">Аппартаменты</label>
+        </fieldset>
+
+        <div class="price">
+          <p class="price__title">Стоимость в сутки, ₽:</p>
+          <div class="price-range">
+            <input type="text" class="price-range__min-number" value="От 0" />
+            <span class="price-range__split"></span>
+            <input
+              type="text"
+              class="price-range__max-number"
+              value="До 3000"
+            />
+          </div>
+          <span class="multi-range">
+            <input type="range" min="0" max="3000" value="0" id="lower" />
+            <input type="range" min="0" max="3000" value="2700" id="upper" />
+          </span>
+          <button type="button" name="price-range__show">Показать</button>
+        </div>
+      </section>
+      <section>
+        <p>Найдено: <span>3</span></p>
+
+        <div>
+          <p>Сортировка</p>
+          <ul>
+            <li><button type="button">По цене</button></li>
+            <li><button type="button">По типу</button></li>
+            <li><button type="button">По рейтингу</button></li>
+          </ul>
+        </div>
+
+        <ul>
+          <li>
+            <button type="button" class="sorting-button"></button>
+          </li>
+          <li>
+            <button type="button" class="sorting-button"></button>
+          </li>
+        </ul>
+
+        <ul class="item-list">
+          <li class="item">
+            <div class="item__descr">
+              <div class="item__descr-img">
+                <img src="https://via.placeholder.com/135x90" alt="#" />
+              </div>
+              <div class="item_descr-about">
+                <div class="item__descr-title">
+                  <h4>Amara Resort & Spa</h4>
                 </div>
-                <input type="range" id="cowbell" name="cowbell" min="0" max="3000" value="2700" step="500">
-                <button type="button" name="price-range__show">Показать</button>
-            </div>
-            
-        </section>
-        <section>
-            <div>
-                
-                <div>   
-                    <p>Найдено: <span>3</span></p>
+                <div class="item__descr-type">
+                  <p>Гостиница</p>
                 </div>
-                <div>
-                    <p>Сортировка</p>
-                    <ul>
-                        <li><button type="button">По цене</button></li>
-                        <li><button type="button">По типу</button></li>
-                        <li><button type="button">По рейтингу</button></li>
-                    </ul>
+                <div class="item__descr-price">
+                  <p>От 4000р</p>
                 </div>
+                <div class="item__descr-buttons">
+                  <button class="btn__about">Подробнее</button>
+                  <button class="btn__booked">Забронировать</button>
+                </div>
+              </div>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <img src="https://via.placeholder.com/11x10" alt="#">
-                    </li>
-                    <li>
-                        <img src="https://via.placeholder.com/11x10" alt="#">
-                    </li>
-                </ul>
+            <div class="item__rating">
+              <div class="item__rating-starts"></div>
+              <div class="item__rating-qty"></div>
             </div>
-            <div>
-                <img src="#" alt="#">
+          </li>
+
+          <li class="item">
+            <div class="item__descr">
+              <div class="item__descr-img">
+                <img src="https://via.placeholder.com/135x90" alt="#" />
+              </div>
+              <div class="item_descr-about">
+                <div class="item__descr-title">
+                  <h4>Desert Quail Inn</h4>
+                </div>
+                <div class="item__descr-type">
+                  <p>Мотель</p>
+                </div>
+                <div class="item__descr-price">
+                  <p>От 3000р</p>
+                </div>
+                <div class="item__descr-buttons">
+                  <button class="btn__about">Подробнее</button>
+                  <button class="btn__booked">Забронировать</button>
+                </div>
+              </div>
             </div>
-            <ul class="catalog-list">
-                <li class="catalog-list__product">
-                    <div class="product__img">
-                        <img src="https://via.placeholder.com/135x90" alt="#">
-                    </div>
-                    <div class="product__descr"></div>
-                        <div class="product__title">
-                            <h3>Amara Resort & Spa</h3>
-                        </div>
-                     <div class="product__price">
-                            <p class="product__price__name">Гостиница</p>
-                            <p>От 4000р</p>
-                     </div>
-                     <div class="product__buttons">
-                            <button class="btn__about">Подробнее</button>
-                            <button class="btn__booked">Забронировать</button>
-                     </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="product__rating">
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-            </ul>
-            <p class="product__rating__quan">Рейтинг: <span>8,5</span></p>
-            <ul class="catalog-list">
-                <li class="catalog-list__product">
-                    <div class="product__img">
-                        <img src="img/product1.jpg" alt="#">
-                    </div>
-                    <div class="product__descr"></div>
-                        <div class="product__title">
-                            <h3>Desert Quail Inn</h3>
-                        </div>
-                     <div class="product__price">
-                            <p class="product__price__name">Мотель</p>
-                            <p>От 3000р</p>
-                     </div>
-                     <div class="product__buttons">
-                            <button class="btn__about">Подробнее</button>
-                            <button class="btn__booked">Забронировать</button>
-                     </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="product__rating">
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-            </ul>
-            <p class="product__rating__quan">Рейтинг: <span>8,9</span></p>
-            <ul class="catalog-list">
-                <li class="catalog-list__product">
-                    <div class="product__img">
-                        <img src="img/product2.jpg" alt="#">
-                    </div>
-                    <div class="product__descr"></div>
-                        <div class="product__title">
-                            <h3>Villas at Poco Diablo</h3>
-                        </div>
-                     <div class="product__price">
-                            <p class="product__price__name">Апартаменты</p>
-                            <p>От 2000р</p>
-                     </div>
-                     <div class="product__buttons">
-                            <button class="btn__about">Подробнее</button>
-                            <button class="btn__booked">Забронировать</button>
-                     </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="product__rating">
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-                <li><img src="https://via.placeholder.com/18x17" alt=""></li>
-            </ul>
-            <p class="product__rating__quan">Рейтинг: <span>9,2</span></p>
-            
-        </section>
-        
+            <div class="item__rating">
+              <div class="item__rating-starts"></div>
+              <div class="item__rating-qty"></div>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="item__descr">
+              <div class="item__descr-img">
+                <img src="https://via.placeholder.com/135x90" alt="#" />
+              </div>
+              <div class="item_descr-about">
+                <div class="item__descr-title">
+                  <h4>Villas at Poco Diablo</h4>
+                </div>
+                <div class="item__descr-type">
+                  <p>Аппартаменты</p>
+                </div>
+                <div class="item__descr-price">
+                  <p>От 2000р</p>
+                </div>
+                <div class="item__descr-buttons">
+                  <button class="btn__about">Подробнее</button>
+                  <button class="btn__booked">Забронировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="item__rating">
+              <div class="item__rating-starts"></div>
+              <div class="item__rating-qty"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
-    
-</body>
+
+    <footer>
+      <div class="tel">
+        #Visitsedona
+        <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="blank.html"> </a>
+        </li>
+
+        <li>
+          <a href="blank.html"> </a>
+        </li>
+
+        <li>
+          <a href="blank.html"> </a>
+        </li>
+      </ul>
+
+      <div class="about">
+        <p>Website by</p>
+        <img src="https://via.placeholder.com/115x33" alt="#" />
+      </div>
+    </footer>
+  </body>
 </html>
