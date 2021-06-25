@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <title>Седона</title>
-    <link rel="icon" type="image/svg+xml" href="/favico.svg" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
-        <a href="index.html">
-          <img src="https://via.placeholder.com/138x70" alt="#" />
-        </a>
       </nav>
+      <a class="main-logo">
+        <img src="img/logo.png" alt="логотип" width="138" height="70" />
+      </a>
     </header>
-    <main>
+    <main class="container">
       <section>
-        <img src="https://via.placeholder.com/1200x217" alt="" />
+        <img src="img/catalog_bcgr.jpg" alt="" />
 
-        <fieldset>
+        <fieldset class="">
           <legend>Инфраструктура:</legend>
 
           <input type="checkbox" name="pool" id="filter-pool" checked />
@@ -42,12 +44,7 @@
           <label for="filter-hotel">Гостиница</label>
           <input type="checkbox" name="moter" id="filter-motel" checked />
           <label for="filter-motel">Мотель</label>
-          <input
-            type="checkbox"
-            name="apartments"
-            id="filter-apartments"
-            checked
-          />
+          <input type="checkbox" name="apartments" id="filter-apartments"checked/>
           <label for="filter-apartments">Аппартаменты</label>
         </fieldset>
 
@@ -94,7 +91,7 @@
           <li class="item">
             <div class="item__descr">
               <div class="item__descr-img">
-                <img src="img/item1.jpg" alt="Гостиница" width="135" height="90" />
+                <img src="img/amara-hotel.jpg" alt="Гостиница" width="135" height="90" />
               </div>
               <div class="item_descr-about">
                 <div class="item__descr-title">
@@ -121,7 +118,7 @@
           <li class="item">
             <div class="item__descr">
               <div class="item__descr-img">
-                <img src="img/item2.jpg" alt="Мотель" width="135" height="90" />
+                <img src="img/desert-motel.jpg" alt="Мотель" width="135" height="90" />
               </div>
               <div class="item_descr-about">
                 <div class="item__descr-title">
@@ -148,7 +145,7 @@
           <li class="item">
             <div class="item__descr">
               <div class="item__descr-img">
-                <img src="img/item3.jpg" alt="Аппартаменты" width="135" height="90" />
+                <img src="img/villas-apartments.jpg" alt="Аппартаменты" width="135" height="90" />
               </div>
               <div class="item_descr-about">
                 <div class="item__descr-title">
@@ -181,23 +178,23 @@
         <a href="tel:+78005558628">+7 800 555-86-28</a>
       </div>
 
-      <ul class="social">
-        <li>
-          <a href="blank.html"> </a>
+      <ul>
+        <li >
+          <a class="social-button" href="blank.html"> <img src="img/twitter.svg" alt="twitter-icon"></a>
         </li>
 
         <li>
-          <a href="blank.html"> </a>
+          <a class="social-button" href="blank.html"><img src="img/facebook.svg" alt="facebook-icon"> </a>
         </li>
 
         <li>
-          <a href="blank.html"> </a>
+          <a class="social-button" href="blank.html"> <img src="img/youtube.svg" alt="youtube-icon"></a>
         </li>
       </ul>
 
       <div class="about">
         <p>Website by</p>
-        <img src="https://via.placeholder.com/115x33" alt="#" />
+        <img src="img/logo_academy.png" alt="лого академии" />
       </div>
     </footer>
   </body>
