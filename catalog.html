@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="ru" class="page">
   <head>
     <meta charset="UTF-8" />
     <title>Седона</title>
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -22,10 +23,8 @@
       </a>
     </header>
     <main class="container">
-      <section>
-        <img src="img/catalog_bcgr.jpg" alt="" />
-
-        <fieldset class="">
+      <section class="filter">
+        <fieldset>
           <legend>Инфраструктура:</legend>
 
           <input type="checkbox" name="pool" id="filter-pool" checked />
@@ -63,29 +62,35 @@
             <input type="range" min="0" max="3000" value="0" id="lower" />
             <input type="range" min="0" max="3000" value="2700" id="upper" />
           </span>
-          <button type="button" name="price-range__show">Показать</button>
+          <button class="price__submit" type="button" name="price-range__show">Показать</button>
         </div>
       </section>
-      <section>
-        <p>Найдено: <span>3</span></p>
+      <section class="content">
+        
 
-        <div>
-          <p>Сортировка</p>
-          <ul>
-            <li><button type="button">По цене</button></li>
-            <li><button type="button">По типу</button></li>
-            <li><button type="button">По рейтингу</button></li>
+        <div class="sort-method">
+          <p class="sort-method__head">Найдено: <span>3</span></p>
+          <p class="sort-method__par">Сортировка</p>
+          <ul class="sort-method__list">
+            <li><button class="sort-method__link" type="button">По цене</button></li>
+            <li><button class="sort-method__link" type="button">По типу</button></li>
+            <li><button class="sort-method__link" type="button">По рейтингу</button></li>
+          </ul>
+        
+
+          <ul class="sort-method__buttons">
+            <li>
+              <button class="sort-method__button" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#CACACA"><path d="M5.5 0L0 10h11z"></path></svg>
+              </button>
+            </li>
+            <li>
+              <button class="sort-method__button" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#CACACA"><path d="M5.5 10L0 0h11"></path></svg>
+              </button>
+            </li>
           </ul>
         </div>
-
-        <ul>
-          <li>
-            <button type="button" class="sorting-button"></button>
-          </li>
-          <li>
-            <button type="button" class="sorting-button"></button>
-          </li>
-        </ul>
 
         <ul class="item-list">
           <li class="item">
@@ -172,29 +177,29 @@
       </section>
     </main>
 
-    <footer>
-      <div class="tel">
-        #Visitsedona
-        <a href="tel:+78005558628">+7 800 555-86-28</a>
+    <footer class="footer">
+      <div>
+        <p>#Visitsedona</p>
+        <a class="footer__phone" href="tel:+78005558628">+7 800 555-86-28</a>
       </div>
 
-      <ul>
-        <li >
-          <a class="social-button" href="blank.html"> <img src="img/twitter.svg" alt="twitter-icon"></a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="blank.html"> <img src="img/twitter.svg" alt="twitter-icon" width="17" height="17"></a>
         </li>
 
-        <li>
-          <a class="social-button" href="blank.html"><img src="img/facebook.svg" alt="facebook-icon"> </a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="blank.html"><img src="img/facebook.svg" alt="facebook-icon" width="12" height="22"> </a>
         </li>
 
-        <li>
-          <a class="social-button" href="blank.html"> <img src="img/youtube.svg" alt="youtube-icon"></a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="blank.html"> <img src="img/youtube.svg" alt="youtube-icon" width="20" height="16"></a>
         </li>
       </ul>
 
-      <div class="about">
+      <div class="footer__copyright">
         <p>Website by</p>
-        <img src="img/logo_academy.png" alt="лого академии" />
+        <img src="img/logo_academy.png" alt="лого академии" width="115" height="33"/>
       </div>
     </footer>
   </body>

@@ -1,0 +1,237 @@
+:root {
+    --basic-white: #ffffff;
+    --basic-black: #000;
+    --basic-grey: #CACACA;
+    --basic-light-brown: #766357;
+    --basic-medium-brown:  #604E43;
+    --basic-brown:  #503E33;
+    --basic-light-blue: #81B3D2;
+    --basic-medium-blue: #669EC0;
+    --basic-blue: #5496BD;
+    /* --basic-blue: */
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--basic-black);
+}   
+
+ul {
+    list-style: none;
+}
+
+.filter {
+    background-image: url("../img/catalog_bcgr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+legend {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.sort-method {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.item_descr-about {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+h4 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.sort-method__head {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+body {
+    font-family: 'PT Sans', 'Arial' sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    color: var(--basic-black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-navigation {
+    color: var(--basic-black);
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.site-navigation a:hover{
+    color: var(--basic-light-blue);
+}
+
+.site-navigation a:focus{
+    color: var(--basic-grey);
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.features-title p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+h2, h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.search-hotel h4 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.search-hotel p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.search-hotel button {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.about {
+    background-color: var(--basic-light-blue);
+}
+
+.footer {
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.footer__copyright{
+    font-weight: 400;
+}
+
+.sort-method__head{
+    font-weight: 700;
+}
+
+.sort-method__link {
+    color: var(--basic-grey);
+    text-decoration: underline;
+    border: 0;
+    background-color: var(--basic-white);
+}
+
+.sort-method__link:hover {
+    color: var(--basic-light-blue);
+}
+
+.sort-method__link:focus {
+    color: var(--basic-light-blue);
+    text-decoration: none;
+}
+
+.sort-method__link:active {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+
+.btn__about {
+    background-color: var(--basic-light-blue);
+    border: none;
+    cursor:pointer;
+    color: var(--basic-white);
+}
+
+.btn__about:hover {
+    background-color: var(--basic-medium-blue);
+}
+
+.btn__about:active {
+    background-color: var(--basic-blue);
+}
+
+
+.btn__booked {
+    background-color: var(--basic-light-brown);
+    cursor: pointer;
+    border: none;
+    color: var(--basic-white);
+}
+
+.btn__booked:hover {
+    background-color: var(--basic-medium-brown);
+}
+
+.btn__booked:active {
+    background-color: var(--basic-brown);
+}
+
+.item__descr-title {
+    font-weight: 700;
+    color: var(--basic-black);
+    cursor: pointer;
+}
+
+.item__descr-title:hover {
+    color: var(--basic-light-blue);
+}
+
+.item__descr-title:active {
+    color: var(--basic-grey);
+}
+
+.sort-method__button{
+    border: none;
+    cursor: pointer;
+    fill: var(--basic-grey);
+    background-color: var(--basic-white);
+}
+
+.sort-method__button:hover svg{
+    fill: var(--basic-black);
+}
+
+.sort-method__button:active svg{
+    fill: var(--basic-light-blue);
+}
+
+.sort-method__button:focus svg{
+    fill: var(--basic-light-blue);
+}
+
+.search-hotel__button {
+    background-color: var(--basic-light-brown);
+    border: none;
+    cursor: pointer;
+    color: var(--basic-white);
+}
+
+.footer__copyright {
+    font-size: 14px;
+    line-height: 26px;
+}
