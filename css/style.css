@@ -31,12 +31,19 @@ ul {
     cursor: pointer;
 }
 
-.filter button {
+.filter__submit {
     background: transparent;
     border: 2px solid var(--basic-white);
     border-radius: 3px;
     color: var(--basic-white);
     min-width: 137px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.filter__submit:hover {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
 }
 
 legend {
@@ -299,4 +306,24 @@ h1 {
 
 .social-list__item:active img {
     opacity: .3;
+}
+
+.footer__img {
+    background-image: url(../img/logo__academy.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 33px;
+    width: 115px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+
+.footer__img:hover {
+    background-image: url(../img/logo__academy--hover.png);
+}
+
+.footer__img:active {
+    background-image: url(../img/logo__academy--active.png);
 }
