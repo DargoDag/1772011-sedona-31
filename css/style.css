@@ -8,7 +8,6 @@
     --basic-light-blue: #81B3D2;
     --basic-medium-blue: #669EC0;
     --basic-blue: #5496BD;
-    /* --basic-blue: */
 }
 
 
@@ -286,14 +285,12 @@ h1 {
 }
 .main-header {
     display: grid;
-    outline: 5px solid rgba(0, 255, 0, 0.7);
     margin: 0;
     padding: 0;
 }
 
 .main-logo {
     justify-self: center;
-    outline: 5px solid rgba(50, 155, 150, 1);
 }
 
 .price__submit {
