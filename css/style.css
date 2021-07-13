@@ -101,7 +101,10 @@ img {
     font-weight: 700;
     display: flex;
     justify-content: space-between;
-    
+    max-width: 1260px;
+    width: 100%;
+    padding: 0 30;
+    display: grid;
 }
 
 .site-navigation a:hover{
@@ -142,15 +145,18 @@ h1 {
     color: var(--basic-white);
 }
 
-.footer {
+.footer .container{
     font-family: inherit;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer__copyright{
     font-weight: 400;
+    justify-self: end;
 }
 
 .sort-method__head{
@@ -280,10 +286,14 @@ h1 {
 }
 .main-header {
     display: grid;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    margin: 0;
+    padding: 0;
 }
 
 .main-logo {
     justify-self: center;
+    outline: 5px solid rgba(50, 155, 150, 1);
 }
 
 .price__submit {
@@ -294,6 +304,7 @@ h1 {
     background-color: var(--basic-light-blue);
     width: 46px;
     height: 48px;
+    justify-self: center;
 }
 
 .social-list__item:hover {
@@ -326,4 +337,42 @@ h1 {
 
 .footer__img:active {
     background-image: url(../img/logo__academy--active.png);
+}
+
+.features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    padding: 0 10px;
+    display: grid;
+}
+
+.features__item {
+    margin: 0 30px;
+}
+
+.social-list {
+    width: 400px;
+    justify-self: center;
+    display: grid;
+}
+
+.footer__contacts {
+    display: grid;
+    justify-self: center;
 }
